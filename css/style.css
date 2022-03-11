@@ -70,6 +70,9 @@ h4{
     color: #14213D;
     padding: 10px;
 }
+.hidden{
+    display: none;
+}
 footer{
     background-color: #14213D;
     color: #fff;
