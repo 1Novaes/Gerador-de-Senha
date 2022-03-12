@@ -26,12 +26,30 @@
 
                 <h2 id="title">Gerador de Senha</h2>
                 <p id="sz-password">Tamanho da senha : <span id="size-password"></span></p>
+
                 <input type="range" min="4" max="20" id="slider">
-                <button id="button-generator" type="button" onclick="generatePassword()">Gerar Senha</button>
+                <div class="tipo-senha-container">
+                    <p>Selecione o tipo de senha</p>
+                    <select name="" id="tipo">
+
+                        <option value="1">Apenas Números</option>
+                        <option value="2">Apenas Letras Minusculas</option>
+                        <option value="3">Apenas Letras MAIUSCULAS</option>
+                        <option value="4">Apenas Letras Minusculas e números</option>
+                        <option value="5">Apenas Letras MAIUSCULAS e números</option>
+                        <option value="6">Apenas Letras MAIUSCULAS e minúsculas</option>
+
+                    </select>
+
+                </div>
+                <button id="button-generator" type="button">Gerar Senha</button>
+
 
             </div>
 
-            <div class="password-container hidden  " onclick="copyPassword()">
+
+
+            <div class=" password-container hidden ">
                 <h4>Senha gerada:</h4>
                 <span id="password">123445555</span>
                 <p id="tooltip">Clique na senha para copia-la.</p>
